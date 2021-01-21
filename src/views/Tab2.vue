@@ -1,28 +1,35 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
-        <ion-title>Tab 2</ion-title>
+      <ion-toolbar slots="start">
+        <ion-title>Photo Gallery</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 2</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      
-      <ExploreContainer name="Tab 2 page" />
+      <ion-button color="primary" href="/button">跳转到按钮组件页面</ion-button>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+// import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+// import ExploreContainer from '@/components/ExploreContainer.vue';
+import { camera, trash, close } from 'ionicons/icons';
+import { IonPage, IonHeader, 
+         IonToolbar, IonTitle, IonContent, IonGrid, IonRow, 
+         IonCol, IonImg } from '@ionic/vue';
 
 export default  {
   name: 'Tab2',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonPage, IonHeader,
+         IonToolbar, IonTitle, IonContent},
+  setup() {
+    return {
+      camera, trash, close
+    }
+  },
+  methods:{
+    takePhoto(){console.log('调用了方法')}
+  }
 }
 </script>
