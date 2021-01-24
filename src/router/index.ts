@@ -3,6 +3,14 @@ import { RouteRecordRaw } from 'vue-router';
 import Tabs from '../views/Tabs.vue'
 import Ex from '../views/Ex.vue'
 import Button from '../views/Button.vue'
+import Model from '../views/Model.vue'
+import Toolbar from '../views/Toolbar.vue'
+import List from '../views/List.vue'
+import Form from '../views/Form.vue'
+import Slide from '../views/Slide.vue'
+import Selectbar from '../views/Selectbar.vue'
+import Segment from '../views/Segment.vue'
+import Date from '../views/Date.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -10,8 +18,40 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/tabs/tab1'
   },
   {
+    path:'/form',
+    component:Form,
+  },
+  {
+    path:'/date',
+    component:Date,
+  },
+  {
+    path:'/slide',
+    component:Slide,
+  },
+  {
+    path:'/selectbar',
+    component:Selectbar,
+  },
+  {
+    path:'/segment',
+    component:Segment,
+  },
+  {
+    path:'/list',
+    component:List,
+  },
+  {
     path:'/ex',
     component:Ex,
+  },
+  {
+    path:'/toolbar',
+    component:Toolbar,
+  },
+  {
+    path:'/model',
+    component:Model,
   },
   {
     path:'/button',

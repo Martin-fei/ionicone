@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="success">
         <ion-title>Header
           1 of 3
         </ion-title>

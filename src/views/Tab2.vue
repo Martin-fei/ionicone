@@ -6,7 +6,14 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-button color="primary" href="/button">跳转到按钮组件页面</ion-button>
+      <ion-button color="dark" href="/button">跳转到按钮组件页面</ion-button>
+      <ion-button color="primary" href="/toolbar">跳转到toolbar组件页面</ion-button>
+      <ion-button color="warning" href="/list">跳转到列表list组件页面</ion-button>
+      <ion-button color="success" href="/form">跳转到表单组件页面</ion-button>
+      <ion-button color="success" href="/slide">跳转到slide组件页面</ion-button>
+      <ion-button color="success" href="/selectbar">跳转到selectbar组件页面</ion-button>
+      <ion-button color="success" href="/segment">跳转到segment组件页面</ion-button>
+      <ion-button color="success" href="/date">跳转到date组件页面</ion-button>
     </ion-content>
   </ion-page>
 </template>
